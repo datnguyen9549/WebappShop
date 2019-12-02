@@ -4438,6 +4438,69 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Web.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Web.Data": "1.0.0",
+          "Web.Data.EF": "1.0.0",
+          "Web.Utilities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Web.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Web.Application.dll": {}
+        }
+      },
+      "Web.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Web.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Web.Data.dll": {}
+        }
+      },
+      "Web.Data.EF/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Web.Data": "1.0.0",
+          "Web.Infrastructure": "1.0.0",
+          "Web.Utilities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Web.Data.EF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Web.Data.EF.dll": {}
+        }
+      },
+      "Web.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Web.Infrastructure.dll": {}
+        }
+      },
+      "Web.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/Web.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Web.Utilities.dll": {}
+        }
       }
     }
   },
@@ -12065,13 +12128,43 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Web.Application/1.0.0": {
+      "type": "project",
+      "path": "../Web.Application/Web.Application.csproj",
+      "msbuildProject": "../Web.Application/Web.Application.csproj"
+    },
+    "Web.Data/1.0.0": {
+      "type": "project",
+      "path": "../Web.Data/Web.Data.csproj",
+      "msbuildProject": "../Web.Data/Web.Data.csproj"
+    },
+    "Web.Data.EF/1.0.0": {
+      "type": "project",
+      "path": "../Web.Data.EF/Web.Data.EF.csproj",
+      "msbuildProject": "../Web.Data.EF/Web.Data.EF.csproj"
+    },
+    "Web.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Web.Infrastructure/Web.Infrastructure.csproj",
+      "msbuildProject": "../Web.Infrastructure/Web.Infrastructure.csproj"
+    },
+    "Web.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../Web.Utilities/Web.Utilities.csproj",
+      "msbuildProject": "../Web.Utilities/Web.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "Web.Application >= 1.0.0",
+      "Web.Data >= 1.0.0",
+      "Web.Data.EF >= 1.0.0",
+      "Web.Infrastructure >= 1.0.0",
+      "Web.Utilities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12103,7 +12196,23 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Programing\\ASP.NET\\Learn\\Final\\WebAppShop\\Web.Application\\Web.Application.csproj": {
+              "projectPath": "D:\\Programing\\ASP.NET\\Learn\\Final\\WebAppShop\\Web.Application\\Web.Application.csproj"
+            },
+            "D:\\Programing\\ASP.NET\\Learn\\Final\\WebAppShop\\Web.Data.EF\\Web.Data.EF.csproj": {
+              "projectPath": "D:\\Programing\\ASP.NET\\Learn\\Final\\WebAppShop\\Web.Data.EF\\Web.Data.EF.csproj"
+            },
+            "D:\\Programing\\ASP.NET\\Learn\\Final\\WebAppShop\\Web.Data\\Web.Data.csproj": {
+              "projectPath": "D:\\Programing\\ASP.NET\\Learn\\Final\\WebAppShop\\Web.Data\\Web.Data.csproj"
+            },
+            "D:\\Programing\\ASP.NET\\Learn\\Final\\WebAppShop\\Web.Infrastructure\\Web.Infrastructure.csproj": {
+              "projectPath": "D:\\Programing\\ASP.NET\\Learn\\Final\\WebAppShop\\Web.Infrastructure\\Web.Infrastructure.csproj"
+            },
+            "D:\\Programing\\ASP.NET\\Learn\\Final\\WebAppShop\\Web.Utilities\\Web.Utilities.csproj": {
+              "projectPath": "D:\\Programing\\ASP.NET\\Learn\\Final\\WebAppShop\\Web.Utilities\\Web.Utilities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
