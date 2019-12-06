@@ -6,7 +6,7 @@ using Web.Infrastructure.SharedKernel;
 
 namespace Web.Data.Entities
 {
-    public class Tags: DomainEntity<string>
+    public class Tag: DomainEntity<string>
     {
         [MaxLength(50)]
         [Required]

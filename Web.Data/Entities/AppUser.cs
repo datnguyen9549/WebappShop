@@ -8,7 +8,7 @@ using Web.Infrastructure.SharedKernel;
 
 namespace Web.Data.Entities
 {
-    [Table("AppUser")]
+    [Table("AppUsers")]
     public class AppUser : DomainEntity<int>, ISwitchable, IDateTracking
     {
         public String Fullname { get; set; }
@@ -17,6 +17,6 @@ namespace Web.Data.Entities
         public string Avatar { get; set; }
         public DateTime DateCreated {get;set;}
         public DateTime DateModified {get;set;}
-        public Status status {get;set;}
+        public Status Status {get;set;}
     }
 }

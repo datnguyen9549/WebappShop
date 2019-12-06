@@ -7,7 +7,7 @@ using Web.Infrastructure.SharedKernel;
 
 namespace Web.Data.Entities
 {
-    [Table("AnnouncementUser")]
+    [Table("AnnouncementUsers")]
     public class AnnouncementUser: DomainEntity<int>
     {
         [StringLength(450)]

@@ -9,7 +9,7 @@ using Web.Infrastructure.SharedKernel;
 
 namespace Web.Data.Entities
 {
-    [Table("Announcement")]
+    [Table("Announcements")]
     public class Announcement: DomainEntity<string>, IDateTracking, ISwitchable
     {
         public Announcement()
@@ -25,7 +25,7 @@ namespace Web.Data.Entities
         public int UserId { get; set; }
         [ForeignKey("UserId")]
         public virtual AppUser AppUser { get; set; }
-        public Status status {get;set;}
+        public Status Status {get;set;}
         public DateTime DateCreated {get;set;}
         public DateTime DateModified {get;set;}
         public virtual ICollection<AnnouncementUser> AnnouncementUsers { get; set; }

@@ -38,7 +38,7 @@ namespace Web.Data.Entities
         public string Unit { get; set; }
         [ForeignKey("CategoryId")]
         public virtual ProductCategory ProductCategory { get; set; }
-        public Status status {get;set;}
+        public Status Status {get;set;}
         public DateTime DateCreated {get;set;}
         public DateTime DateModified {get;set;}
         public string SeopageTitle {get;set;}

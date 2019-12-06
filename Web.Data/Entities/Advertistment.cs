@@ -9,7 +9,7 @@ using Web.Infrastructure.SharedKernel;
 
 namespace Web.Data.Entities
 {
-    [Table("Advertistment")]
+    [Table("Advertistments")]
     public class Advertistment : DomainEntity<int>, ISwitchable, ISortable, IDateTracking
     {
         [StringLength(250)]
@@ -23,8 +23,10 @@ namespace Web.Data.Entities
         [StringLength(20)]
         public string PositionId { get; set; }
         public int SortOrder {get;set;}
-        public Status status {get;set;}
+        public Status Status {get;set;}
         public DateTime DateCreated {get;set;}
         public DateTime DateModified {get;set;}
+        [ForeignKey("PositionId")]
+        public virtual AdvertisetmentPosition AdvertisetmentPosition { get; set; }
     }
 }

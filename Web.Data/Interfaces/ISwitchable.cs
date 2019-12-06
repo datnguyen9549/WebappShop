@@ -4,6 +4,6 @@ namespace Web.Data.Interfaces
 {
     interface ISwitchable
     {
-        Status status { get; set; }
+        Status Status { get; set; }
     }
 }

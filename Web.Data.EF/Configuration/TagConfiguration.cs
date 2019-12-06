@@ -8,9 +8,9 @@ using Web.Data.Entities;
 namespace Web.Data.EF.Configuration
 {
     // Fluent API, config Id trong Tags class = varchar(50)
-    public class TagConfiguration : DbEntityConfiguration<Tags>
+    public class TagConfiguration : DbEntityConfiguration<Tag>
     {
-        public override void Configure(EntityTypeBuilder<Tags> entity)
+        public override void Configure(EntityTypeBuilder<Tag> entity)
         {
             entity.Property(b => b.Id)
                 .HasMaxLength(50)

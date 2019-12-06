@@ -7,7 +7,7 @@ using Web.Infrastructure.SharedKernel;
 
 namespace Web.Data.Entities
 {
-    public class ProductTags:DomainEntity<int>
+    public class ProductTag:DomainEntity<int>
     {
         public int productId { get; set; }
 
@@ -16,7 +16,7 @@ namespace Web.Data.Entities
         public string TagId { get; set; }
 
         [ForeignKey("TagId")]
-        public virtual Tags tag { get; set; }
+        public virtual Tag tag { get; set; }
 
         [ForeignKey("ProductId")]
         public virtual Product product { get; set; }

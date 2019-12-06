@@ -25,7 +25,11 @@ Product
 	HotFlg,
 	NewFlg
 	Status
-	
+
+ProductImage
+ProductQuantity
+ProductSize
+ProductColor	
 
 Bill
 	CustomerId,
@@ -87,6 +91,14 @@ Advertisement
 Anouncement
 AnnouncementUser
 
+color
+size
+
+ProductSize
+ProductColor
+
+Function //list ten cua admin
+
 Brand
 	Id
 	Name
@@ -117,6 +129,7 @@ Page
 	Id
 	Name
 	Content
+	Status
 
 Feedback
 	Name
